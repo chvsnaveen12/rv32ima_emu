@@ -24,3 +24,5 @@ sync && poweroff -f
 ```
 Although there should be no background processes running for this to work.
 
+## Acknowledgements
+A lot of inspiration has been drawn from https://github.com/franzflasch/riscv_em and https://github.com/sysprog21/semu
