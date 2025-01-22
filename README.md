@@ -8,11 +8,11 @@ The SBI is currently openSBI.
 git clone https://github.com/chvsnaveen12/rv32ima_emu
 cd rv32ima_emu
 make
-./emu fw_dynamic_rv32ima.bin Image boot.img riscv_em32_linux.dtb
+./emu openSBI_IMAGE LINUX_IMAGE DISK_IMAGE FDT_FILE
 ```
 This should drop you into a busybox rootfs without an init.
 
-## Poweroff
+## Exiting
 Since I haven't implemented a proper init system. The init file is essentially
 ```
 !#/bin/sh
@@ -23,6 +23,7 @@ A safe poweroff can be accomplished via this command
 sync && poweroff -f
 ```
 Although there should be no background processes running for this to work.
+A forceful exit can be accomplished via pressing `Ctrl+A`
 
 ## Acknowledgements
 A lot of inspiration has been drawn from https://github.com/franzflasch/riscv_em and https://github.com/sysprog21/semu
