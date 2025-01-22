@@ -10,7 +10,7 @@ cd rv32ima_emu
 make
 ./emu openSBI_IMAGE LINUX_IMAGE DISK_IMAGE FDT_FILE
 ```
-This should drop you into a busybox rootfs without an init.
+Prebuilt binaries can be downloaded from releases. This shall drop you into a minimal busybox rootfs
 
 ## Exiting
 Since I haven't implemented a proper init system. The init file is essentially
