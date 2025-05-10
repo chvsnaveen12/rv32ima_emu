@@ -9,7 +9,7 @@
     #define TIMES 100000000000
 #endif
 
-bool nigga = false;
+bool temp = false;
 
 void soc_init(char* kernel_file, char* linux_file, char* initrd_file, char* dtb_file){
     memory_init(kernel_file, linux_file, initrd_file, dtb_file);
@@ -51,7 +51,7 @@ void soc_run(){
         core_process_interrupts(mei, sei, mti, msi);
         // if(counter++ > 20000){
         // if(counter++ > 700000000){
-            if(nigga){
+            if(temp){
             core_dump();
         // //     temp();
             usleep(100000);
