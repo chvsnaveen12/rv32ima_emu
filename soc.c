@@ -20,9 +20,9 @@ void soc_init(char* kernel_file, char* linux_file, char* initrd_file, char* dtb_
 
 uint64_t counter = 0;
 
-void temp(){
+// void temp(){
 
-}
+// }
 
 void soc_run(){
     uint32_t inst;
